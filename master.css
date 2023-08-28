@@ -1,0 +1,105 @@
+body {
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+main .first-part {
+  height: 100vh;
+  background-image: url(img/photo-1443527216320-7e744084f5a7-1.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+@media screen and (min-width: 1500px) {
+  main .first-part {
+    height: 80vh;
+  }
+}
+main .first-part > .head-top {
+  background-color: #fff;
+  height: 60px;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+main .first-part > .head-top > header > div > ul {
+  list-style-type: none;
+  margin: auto !important;
+}
+main .first-part > .head-top > header > div:first-of-type {
+  font-size: 30px;
+}
+main .first-part .head-bottom {
+  height: calc(100vh - 60px);
+  text-transform: capitalize;
+}
+main .first-part .head-bottom h2,
+main .first-part .head-bottom p,
+main .first-part .head-bottom div {
+  height: 100px;
+}
+main .first-part .head-bottom h2 {
+  font-size: 70px;
+  font-weight: 200;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  main .first-part .head-bottom h2 {
+    font-size: 35px;
+  }
+}
+main .first-part .head-bottom p {
+  font-weight: 100;
+}
+main .first-part .head-bottom div > span {
+  width: 200px !important;
+  height: 50px !important;
+  font-weight: 300;
+  transition: 0.4s;
+}
+main .first-part .head-bottom div > span:first-of-type {
+  background-color: orangered !important;
+}
+main .first-part .head-bottom div > span:last-of-type:hover {
+  background-color: #fff;
+  color: black !important;
+}
+main .second-part {
+  height: 100vh;
+}
+@media screen and (min-width: 1500px) {
+  main .second-part {
+    height: 80vh;
+  }
+}
+main .second-part > .row > figure > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .second-part > .row > article > h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
+main .second-part > .row > article > p {
+  color: rgb(159, 159, 159);
+  text-transform: capitalize;
+  line-height: 30px;
+}
+main .second-part > .row > article > div {
+  width: 300px;
+  height: 70px;
+  background-color: orangered;
+  color: #fff;
+  text-transform: capitalize;
+}
+main .third-part {
+  background-color: rgb(211, 210, 210);
+}
+main .fourth-part {
+  height: 80vh !important;
+  background-image: url(img/1.jpg);
+  background-size: cover;
+  background-position: center;
+}/*# sourceMappingURL=master.css.map */

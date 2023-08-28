@@ -1,0 +1,124 @@
+body{
+    overflow-x: hidden;
+}
+main {
+    width: 100%;
+    height: auto;
+
+    .first-part {
+        @media screen and (min-width:1500px) {
+            height: 80vh;
+        }
+
+        height: 100vh;
+        background-image: url(img/photo-1443527216320-7e744084f5a7-1.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        >.head-top {
+            background-color: #fff;
+            height: 60px;
+            font-weight: 200;
+            text-transform: capitalize;
+
+            >header {
+                >div {
+                    >ul {
+                        list-style-type: none;
+                        margin: auto !important;
+                    }
+
+                    &:first-of-type {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+
+        // end-menu
+        .head-bottom {
+            height: calc(100vh - 60px);
+            text-transform: capitalize;
+
+            h2,
+            p,
+            div {
+                height: 100px;
+            }
+
+            h2 {
+                font-size: 70px;
+                font-weight: 200;
+                text-align: center;
+
+                @media screen and (max-width:768px) {
+                    font-size: 35px;
+                }
+            }
+
+            p {
+                font-weight: 100;
+            }
+
+            div>span {
+                width: 200px !important;
+                height: 50px !important;
+                font-weight: 300;
+                transition: .4s;
+                &:first-of-type{
+                    background-color: orangered !important;
+                }
+                &:last-of-type:hover {
+                    background-color: #fff;
+                    color: black !important;
+                }
+            }
+
+        }
+    }
+
+    .second-part {
+        @media screen and (min-width:1500px) {
+            height: 80vh;
+        }
+
+        height: 100vh;
+
+        >.row {
+            >figure>img {
+                object-fit: cover;
+            }
+
+            >article {
+                >h2 {
+                    font-size: 40px;
+                    font-weight: 300;
+                }
+
+                >p {
+                    color: rgb(159, 159, 159);
+                    text-transform: capitalize;
+                    line-height: 30px;
+                }
+
+                >div {
+                    width: 300px;
+                    height: 70px;
+                    background-color: orangered;
+                    color: #fff;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+    .third-part{
+        background-color: rgb(211, 210, 210);
+    }
+    .fourth-part{
+        height: 80vh !important;
+        background-image: url(img/1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
